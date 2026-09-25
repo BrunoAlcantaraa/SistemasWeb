@@ -1,0 +1,83 @@
+:root {
+  --cor-primaria: #3b82f6;
+  --cor-primaria-escura: #2563eb;
+  --cor-texto: #1f2937;
+  --cor-texto-suave: #6b7280;
+  --cor-borda: #d1d5db;
+  --cor-fundo: #f3f4f6;
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+#root {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--cor-primaria);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--cor-primaria-escura);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+button.secundario {
+  color: var(--cor-texto);
+  background: #e5e7eb;
+}
+
+button.secundario:hover {
+  background: var(--cor-borda);
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  font: inherit;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.25);
+}

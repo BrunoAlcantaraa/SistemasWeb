@@ -1,0 +1,57 @@
+.contagem {
+  margin: 0;
+  color: var(--cor-texto-suave);
+}
+
+.contagem strong {
+  display: block;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: var(--cor-texto);
+}
+
+.timeline {
+  margin: 1.5rem 0;
+}
+
+.timeline-track {
+  position: relative;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.timeline-preenchimento {
+  height: 100%;
+  background: var(--cor-primaria);
+  border-radius: 4px;
+  transition: width 0.25s ease;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  background: var(--cor-primaria);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25);
+  transform: translate(-50%, -50%);
+  transition: left 0.25s ease;
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}

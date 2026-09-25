@@ -1,0 +1,23 @@
+.campos {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.campos label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  text-align: left;
+}
+
+.largo {
+  width: 100%;
+}
+
+.voltar {
+  margin-top: 1.5rem;
+}
